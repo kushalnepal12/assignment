@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="top-nav">
+      <div>
+        Kushal Nepal
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html#about">About</a></li>
+        <li><a href="home.html#">Portfolio</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>  
+    <section id="contact-form">
+        <h1>Contact Form</h1>
+        <p class="lead">Welcome to Contact Form</p>
+        <p class="error_message" id="error_message"></p>
+        <div class="form">
+            <form class="full-width" id="contactForm">
+                <div class="form-control">
+                <input type="text" name="name" id="name" class="input-field" placeholder="Your Name">
+                </div>
+                <div class="form-control">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Your Email">
+                </div>
+                <div class="form-control">
+                <input type="tel" id="phone" name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                class="input-field" placeholder="Phone Number">
+                </div>
+                <div class="form-control">
+                    <input type="text" name="subject" id="subject" class="input-field" placeholder="Subject">
+                </div>
+               <div class="form-control">
+                <textarea placeholder="Your Message"id="message" class="input-field"></textarea>
+               </div>
+               <input type="submit" value="Submit">
+            </form>
+        </div>
+      </section> 
+</div>
+
+</body>
+</html>  
